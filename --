@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main() {
+    int n;
+    std::cout << "Введите высоту треугольника: ";
+    std::cin >> n;
+
+   
+    if (n <= 0) {
+        std::cout << "Аяяй нельзя проверять на 0 в задаче такого нет" << std::endl;
+        return 1;
+    }
+
+    for (int i = 0; i < n; ++i) {
+        
+        for (int j = 0; j <= i; ++j) {
+            std::cout << "*";
+        }
+        std::cout << std::endl; 
+    }
+
+    return 0; 
+}
